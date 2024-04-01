@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1711944538855
+current_stage: Production
+description: null
+last_updated_timestamp: 1711944538860
+name: spaceship_titanic_model
+run_id: f62193f650a44cedaa66a8279dd9e405
+run_link: null
+source: file:///Users/wilsvenleong/Downloads/learning-materials/spaceship-titanic/mlruns/409338397335019092/f62193f650a44cedaa66a8279dd9e405/artifacts/Production
+status: READY
+status_message: null
+storage_location: file:///Users/wilsvenleong/Downloads/learning-materials/spaceship-titanic/mlruns/409338397335019092/f62193f650a44cedaa66a8279dd9e405/artifacts/Production
+user_id: null
+version: 1

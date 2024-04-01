@@ -1,0 +1,1 @@
+{'classifier__subsample': 0.7, 'classifier__reg_lambda': 0.2, 'classifier__reg_alpha': 0.5, 'classifier__n_estimators': 100, 'classifier__min_child_weight': 3, 'classifier__learning_rate': 0.1, 'classifier__gamma': 2, 'classifier__colsample_bytree': 0.6}

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/wilsvenleong/Downloads/learning-materials/spaceship-titanic/mlruns/409338397335019092/a70d4a54a5f4473c89f1917b2cf38bb2/artifacts
+end_time: 1711945575524
+entry_point_name: ''
+experiment_id: '409338397335019092'
+lifecycle_stage: active
+run_id: a70d4a54a5f4473c89f1917b2cf38bb2
+run_name: model_inference
+run_uuid: a70d4a54a5f4473c89f1917b2cf38bb2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711945574752
+status: 3
+tags: []
+user_id: wilsvenleong

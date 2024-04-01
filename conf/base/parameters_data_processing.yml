@@ -1,0 +1,19 @@
+# This is a boilerplate parameters config generated for pipeline 'data_processing'
+# using Kedro 0.19.3.
+#
+# Documentation for this file format can be found in "Parameters"
+# Link: https://docs.kedro.org/en/0.19.3/configuration/parameters.html
+
+preprocessing:
+  filter_cat_features:
+    CabinDeck:
+      - "A"
+      - "D"
+      - "F"
+      - "T"
+    CabinRegion:
+      - "G"
+      - "F"
+    Destination:
+      - None
+      - "PSO J318.5-22"

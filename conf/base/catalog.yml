@@ -1,0 +1,62 @@
+train:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/train.csv
+
+test:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/test.csv
+
+sample_submission:
+  type: pandas.CSVDataset
+  filepath: data/01_raw/sample_submission.csv
+
+modeling_data:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pandas.ParquetDataset
+    filepath: data/03_primary/modeling_data.parquet
+
+X_train:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pandas.ParquetDataset
+    filepath: data/05_model_input/X_train.parquet
+
+y_train:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pandas.ParquetDataset
+    filepath: data/05_model_input/y_train.parquet
+
+X_test:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pandas.ParquetDataset
+    filepath: data/05_model_input/X_test.parquet
+
+y_test:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pandas.ParquetDataset
+    filepath: data/05_model_input/y_test.parquet
+
+candidate_model:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: kedro_mlflow.io.models.MlflowModelLocalFileSystemDataset
+    flavor: mlflow.sklearn
+    filepath: data/06_models/candidate_model
+
+inference_data:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pandas.ParquetDataset
+    filepath: data/03_primary/inference_data.parquet
+
+submission_data:
+  type: kedro_mlflow.io.artifacts.MlflowArtifactDataset
+  dataset:
+    type: pandas.CSVDataset
+    filepath: data/07_model_output/submission_data.csv
+    save_args:
+      index: False

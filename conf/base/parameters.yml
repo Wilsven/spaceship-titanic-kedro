@@ -1,0 +1,3 @@
+col_maps:
+  id_col: "PassengerId"
+  target_col: "Transported"
