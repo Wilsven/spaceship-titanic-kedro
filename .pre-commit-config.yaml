@@ -16,4 +16,5 @@ repos:
         name: Sorting imports (isort)
         entry: isort
         language: system
+        args: ["--profile", "black"]
         types: [python]
